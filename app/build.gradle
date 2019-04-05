@@ -21,6 +21,16 @@ android {
     configurations.all {
         resolutionStrategy.force 'com.google.code.findbugs:jsr305:2.0.1'
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
 
     productFlavors {
         free {
@@ -49,5 +59,17 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:17.2.0'
     // LEGACY: Legacy compile :backend project
     implementation project(path: ':backend', configuration: 'android-endpoints')
+    implementation project(":jokelib")
+    implementation project(":myandroidlib")
+    implementation group: 'com.google.api-client', name: 'google-api-client', version: '1.22.0'
+    implementation group: 'com.google.api-client', name: 'google-api-client-android', version: '1.22.0'
+    implementation 'com.google.code.findbugs:jsr305:2.0.1'
+    implementation 'com.google.http-client:google-http-client-android:1.22.0'
+    implementation 'com.google.api-client:google-api-client:+'
 
+    testImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:testing-support-lib:0.1'
+    androidTestImplementation 'com.android.support.test:runner:0.2'
+    androidTestImplementation 'com.android.support.test:rules:0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
 }

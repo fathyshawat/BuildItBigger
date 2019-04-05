@@ -13,4 +13,8 @@ public class JokeBean {
     public String getJoke() {
         return jokeTelling.getRandomJoke();
     }
+
+    public void setJokeTelling(TellingJoke jokeTelling) {
+        this.jokeTelling = jokeTelling;
+    }
 }
