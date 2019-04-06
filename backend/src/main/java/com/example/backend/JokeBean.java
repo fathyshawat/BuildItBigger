@@ -4,13 +4,13 @@ import com.example.jokelib.Joke;
 
 public class JokeBean {
 
-    private Joke myData;
+    private String myData;
 
-    public Joke getData() {
+    public String getData() {
         return myData;
     }
 
-    public void setData(Joke data) {
+    public void setData(String data) {
         myData = data;
     }
 }
