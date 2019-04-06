@@ -1,20 +1,16 @@
 package com.example.backend;
 
-import com.example.jokelib.TellingJoke;
+import com.example.jokelib.Joke;
 
 public class JokeBean {
 
-    private TellingJoke jokeTelling;
+    private Joke myData;
 
-    public JokeBean() {
-        jokeTelling = new TellingJoke();
+    public Joke getData() {
+        return myData;
     }
 
-    public String getJoke() {
-        return jokeTelling.getRandomJoke();
-    }
-
-    public void setJokeTelling(TellingJoke jokeTelling) {
-        this.jokeTelling = jokeTelling;
+    public void setData(Joke data) {
+        myData = data;
     }
 }

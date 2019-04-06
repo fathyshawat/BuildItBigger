@@ -6,7 +6,7 @@ import com.google.api.server.spi.config.ApiNamespace;
 
 @Api(
         name = "myApi",
-        version = "v1",
+        version = "v2",
         namespace = @ApiNamespace(
                 ownerDomain = "backend.example.com",
                 ownerName = "backend.example.com",
