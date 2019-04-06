@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
     @SuppressWarnings("unchecked")
     public void tellJoke(View view) {
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressbar);
-       // new EndPointAsyncTask(this, progressBar).execute();
+        new EndPointAsyncTask(this, progressBar).execute();
     }
 }
