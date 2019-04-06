@@ -40,7 +40,7 @@ public class EndPointAsyncTask extends AsyncTask<Pair<Context, String>, Void, St
         if (mJokeApi == null) {
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
-                    .setRootUrl("https://fathyId.appspot.com/_ah/api/");
+                    .setRootUrl("http://10.0.2.2:8080/_ah/api/");
             mJokeApi = builder.build();
         }
         try {
