@@ -16,7 +16,7 @@ public class NonString {
 
     private static final String LOG_TAG = "NonEmptyStringTest";
 
-    @Test
+    @SuppressWarnings("unchecked")
     public void test() {
         String result = null;
         EndPointAsyncTask endpointsAsyncTask = new EndPointAsyncTask(getContext(), null);
